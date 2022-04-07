@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="volConvStyle.css">
+        <title>Conversion App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="appText">
+                <h2>Volume Conversion</h2>
+                <p>Enter values below!</p>
+                <div class="temp_calculator">
+                    <form name="form">
+                      <div class="temp_calculator_inputs">
+                        <div class="calculator_value">
+                          <label>Teacher's Value:</label>
+                          <input type="text" placeholder="0" name="value" id="input_value">
+                        </div>
+                        <div class="calculator_input">
+                          <label>From:</label>
+                          <select name="input" id="input">
+                            <option value="liters">Liters</option>
+                            <option value="gallons">Gallons</option>
+                            <option value="cups">Cups</option>
+                          </select>
+                        </div>
+                        <div class="calculator_input">
+                          <label>To:</label>
+                          <select name="output" id="output">
+                            <option value="liters">Liters</option>
+                            <option value="gallons">Gallons</option>
+                            <option value="cups">Cups</option>
+                          </select>
+                        </div>          
+                      </div>
+                      <div class="result_area">
+                        <label for="">Student's Answer:</label>
+                        <input type="text" id="userInput">
+                        <p id="resultText"></p>
+                      </div>
+                      <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
+                      <button type="button" id="convert" class="cal-btn" onclick="convertVolume()">Convert</button>
+                    </form>
+                  </div>
+                <div class="buttons">
+                    <table>
+                        <tr>
+                            <td><button class="btn-home"><a href="convFront.html">Home</a></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="volConvBack.js"></script>
+    </body>
+</html>
